@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="master.css">
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function()
+    {
+      loadItems();
+
+      function loadItems(){
+        $("#autodata").load("php/items.php");
+        setTimeout(loadItems,10000);
+      }
+  });
+  </script>
+  <body>
+      <div class="container" id="autodata">
+
+      </div>
+  </body>
+</html>
