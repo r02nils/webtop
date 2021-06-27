@@ -2,12 +2,10 @@
 2. Registrieren (falls noch kein Account erstellt)
 3. Einloggen mit Username und Passwort
 
-Link erstellen: Unten Rechts auf das Plus zeichen drücken und der Name und die
-URL des Links angeben. Wenn kein Bild hinzugefügt wird, erscheint einfach das
-Webtop Logo als Link Bild.
+Link erstellen: Ein Link kann mit Namen, URL und Image erstellt werden. Image ist optional.
 
-Link löschen: Auf den roten Kreis oben rechts von dem Link drücken.
+Link löschen: Löscht den ausgewählten Link.
 
-Link bearbeiten: bald...
+Link bearbeiten: Der Link kann mit Namen, URL und Image geändert werden.
 
-Einstellungen: bald...
+Einstellungen: In den Einstellungen kann das Hintergrund Bild geändert werden. Es gibt auch noch einen Abmelden, Namen ändern und Passwort ändern Link.
