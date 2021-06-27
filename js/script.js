@@ -107,6 +107,7 @@ document.getElementById('swurl2').value = swurl2;
 document.getElementById('swimg1').value = swimg1;
 document.getElementById('swimg2').value = swimg2;
 document.getElementById('swbtn').click();
+setTimeout(() => { $("#autodata").load("php/items.php"); }, 200);
 }
 }
 

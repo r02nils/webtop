@@ -25,7 +25,7 @@ if ($result->num_rows > 0) {
     <div class="icon">
       <div class="delete" onclick="remove({$itemID})"></div>
       <div class="edit" onclick="edit({$itemID},'$name','$url','$img')"></div>
-      <a target="_blank" href="$url"><img src="$img" alt="" height="100px" width="100px"></a>
+      <a target="_blank" href="$url"><img src="$img" alt=""></a>
     </div>
         <p class="itemText" onclick="swap({$counter},{$itemID},'$name','$url','$img')">$name</p>
     </div>

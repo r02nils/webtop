@@ -39,7 +39,7 @@
     <!-- The Modal -->
     <div id="myModal" class="modal">
     <div class="modal-content">
-      <form class="add" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+      <form class="add" target="frame" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
         <table>
           <tr>
             <td><label for="name">Name</label></td>
@@ -65,7 +65,7 @@
   <!-- Delete Modal -->
   <div id="myDelModal" class="delmodal">
   <div class="delmodal-content">
-    <form class="deladd" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+    <form class="deladd" target="frame" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
       <table>
         <tr>
           <td>Remove Link?</td>
@@ -84,7 +84,7 @@
 <!-- Edit Modal -->
 <div id="myEdModal" class="edmodal">
 <div class="edmodal-content">
-  <form class="edadd" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+  <form class="edadd" target="frame" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
     <table>
       <tr>
         <td><label for="edid" hidden>id</label></td>
@@ -114,7 +114,7 @@
 <!-- Settings Modal -->
 <div id="mySeModal" class="semodal">
 <div class="semodal-content">
-  <form class="seadd" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+  <form class="seadd" target="frame" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
     <table>
       <tr>
         <td><label for="seImg">Background-Image</label></td>
@@ -123,13 +123,16 @@
       <tr>
         <td><input id="sebtn" type="submit" name="sebtn" value="change"></td>
       </tr>
+      <a href="php/changeName.php">change name</a><br>
+      <a href="php/changeName.php">change password</a><br>
+      <a href="php/signoff.php">sign off</a><br>
     </table>
   </form>
   <div class="close"></div>
 </div>
 </div>
 
-<form class="swapForm" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" hidden>
+<form class="swapForm" target="frame" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" hidden>
   <input id="swicon1" type="text" name="swicon1" value="">
   <input id="swicon2" type="text" name="swicon2" value="">
   <input id="swname1" type="text" name="swname1" value="">
@@ -254,6 +257,18 @@
       echo "Error";
     }
     else{
+      $sql = "select * from Settings where name = '$name'";
+      $result = $conn->query($sql);
+      if ($result->num_rows > 0) {
+        $sql = "update Settings set background = '$imgItem' where name = '$name'";
+
+        if ($conn->query($sql) === TRUE) {
+        } else {
+          echo "Error";
+        }
+      }
+      else{
+
       $sql = "INSERT INTO Settings (name, background)
       VALUES ('$name', '$imgItem')";
 
@@ -261,6 +276,7 @@
       } else {
         echo "Error";
       }
+    }
     }
   }
 }
