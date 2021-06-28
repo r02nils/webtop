@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Change Name</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../css/login.css">
     <link rel="icon" href="icon.png">
   </head>
   <body>
@@ -18,10 +18,6 @@
       <input type="submit" class="fadeIn fourth" value="change Name!" name="btn">
     </form>
 
-    <!-- Remind Passowrd -->
-    <div id="formFooter">
-      <a class="underlineHover" href="sendEmail.php">back to chat</a>
-    </div>
   </div>
 </div>
   </body>
@@ -67,13 +63,13 @@ if(isset($_POST['btn'])){
         echo "Error";
       }
 
-      $sql = "update MESSAGE set name = '$name' where name = '$n'";
+      $sql = "update Item set user = '$name' where name = '$n'";
 
       if ($conn->query($sql) === TRUE) {
       } else {
         echo "Error";
       }
-      header("Location: index.php");
+      header("Location: ../index.php");
     }
     }
     }

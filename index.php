@@ -124,7 +124,7 @@
         <td><input id="sebtn" type="submit" name="sebtn" value="change"></td>
       </tr>
       <a href="php/changeName.php">change name</a><br>
-      <a href="php/changeName.php">change password</a><br>
+      <a href="php/changePassword.php">change password</a><br>
       <a href="php/signoff.php">sign off</a><br>
     </table>
   </form>
