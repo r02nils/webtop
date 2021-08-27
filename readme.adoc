@@ -4,8 +4,12 @@
 
 Link erstellen: Ein Link kann mit Namen, URL und Image erstellt werden. Image ist optional.
 
+Bild angeben: Bei der Bilder eingabe muss eine Bild-Adresse eingegeben. Wenn ein falsche Bild-Adresse oder keine angegeben wird, dann wird einfach ein Standart Bild angezeigt.
+
 Link löschen: Löscht den ausgewählten Link.
 
 Link bearbeiten: Der Link kann mit Namen, URL und Image geändert werden.
 
 Einstellungen: In den Einstellungen kann das Hintergrund Bild geändert werden. Es gibt auch noch einen Abmelden, Namen ändern und Passwort ändern Link.
+
+Link tauschen: Man kann 2 verschiedene Links miteinander tauschen, sodass sie die Position ändern. Das macht man indem man den Namen vom ersten Link, sowie den Namen des zweiten Link klickt.
