@@ -4,6 +4,8 @@
 
 Link erstellen: Ein Link kann mit Namen, URL und Image erstellt werden. Image ist optional.
 
+Url: Es muss ganze Url angegeben werden. z.b https://google.com
+
 Bild angeben: Bei der Bilder eingabe muss eine Bild-Adresse eingegeben. Wenn ein falsche Bild-Adresse oder keine angegeben wird, dann wird einfach ein Standart Bild angezeigt.
 
 Link löschen: Löscht den ausgewählten Link.
